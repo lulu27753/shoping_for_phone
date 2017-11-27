@@ -2,15 +2,16 @@ var app = require('koa')();
 var router = require('koa-router')();
 var koaBody = require('koa-body')();
 
-router.get('/', function *(next) {
-    this.body = 'hello koa !'
+var homeAdDate = require('./Home/ad.js')
+router.get('/api/homead', function *(next) {
+    this.body = homeAdDate
 });
 
 router.get('/api', function *(next) {
     this.body = 'test data'
 });
 router.get('/api/1', function *(next) {
-    this.body = 'test data 1'
+    this.body = homeAdDate
 });
 router.get('/api/2', function *(next) {
     this.body = {

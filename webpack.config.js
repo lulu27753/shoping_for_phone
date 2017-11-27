@@ -17,7 +17,7 @@ module.exports = {
     resolve:{
         extensions:['', '.js','.jsx']
     },
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     module: {
         // preLoaders: [
         //     // 报错 ？？？？？
@@ -68,6 +68,10 @@ module.exports = {
             target: 'http://localhost:3000',
             secure: false
           }
+        //   '/v2': {
+        //     target: 'https://api.douban.com',
+        //     secure: false
+        //   }
         },
         contentBase: "./public", //本地服务器所加载的页面所在的目录
         colors: true, //终端中输出结果为彩色
