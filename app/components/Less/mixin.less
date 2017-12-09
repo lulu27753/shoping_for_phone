@@ -1,0 +1,35 @@
+@blue-6: #108ee9;
+@red-6: #f04134;
+@font-size-base: 12px;
+@font-size-lg: @font-size-base + 2px;
+@margin-left-base: 15px;
+
+
+#header {
+  h1 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  p { font-size: @font-size-base;
+    a { text-decoration: none;
+      &:hover { font-color: @red-6 }
+    }
+  }
+}
+
+.primary (@blue-6) {
+  background-color: @blue-6;
+  font-size: @font-size-lg;
+  
+}
+
+
+#cancel-btn {
+  .primary(#00a854);
+  height: (100px / 4px);
+}
+
+#submit-btn {
+  .primary(@blue-6);
+  margin-left: @margin-left-base;
+}
