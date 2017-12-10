@@ -1,5 +1,6 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
+import { Link } from 'react-router'
 
 import './style.less'
 import Item from './items/index.jsx'
@@ -18,7 +19,6 @@ class List extends React.Component {
     			return (
     			<li key = {index} className="list-container">
     				<Item data={item}></Item>
-    				
     			</li>)
     		})}
             </div>
