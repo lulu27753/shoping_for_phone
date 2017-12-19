@@ -20,7 +20,7 @@ class HomeHeader extends React.Component {
         return (
             <div className="clear-fix">
             	<div className="fl home_header_left"><Link to='/city'>{ this.props.cityName }</Link></div>
-                <div className="fr home_header_right"></div>
+                <div className="fr home_header_right"><Link to='/login'>Login</Link></div>
             	<SearchInput value='' enterHandle={this.enterHandle}/>
             	
             </div>
