@@ -66,7 +66,7 @@ class Buy extends React.Component {
     	const userinfo = this.props.userinfo
     	if (!userinfo.username) {
     		// 跳转到登陆页面
-    		hashHistory.push(`/login/${encodeURLComponent(`/detail/${id}`)}`)
+    		hashHistory.push(`/login/${encodeURIComponent(`/detail/${id}`)}`)
     		return false
 
     	}
@@ -74,7 +74,7 @@ class Buy extends React.Component {
     }
     render() {
         return (
-            <div><BuyAndStore isStore={this.state.isStore} buyHandle= {this.buyHandle.bind(this)} storeHandle= {this.storeHandle.bind(this)}/></div>
+            <div><BuyAndStore isStore={this.state.isStore} buyHandle= {this.buyHandle} storeHandle= {this.storeHandle}/></div>
         )
     }
 }
